@@ -1,5 +1,5 @@
 # Flask Api Boilerplate
-This is a minimal standalone flask api using Docker, Postgres, sqlalchemy, and gunicorn.
+This is a minimal flask api boilerplate using Docker, Postgres, sqlalchemy, and gunicorn.
 
 To get started:
 

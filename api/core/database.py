@@ -5,7 +5,7 @@ from api.core.application import application
 
 
 class Config(object):
-    SQLALCHEMY_DATABASE_URI = os.getenv("POSTGRES_URL", "sqlite://")
+    SQLALCHEMY_DATABASE_URI = os.getenv("POSTGRES_URL")
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 config = Config()

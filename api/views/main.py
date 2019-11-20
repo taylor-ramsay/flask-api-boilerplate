@@ -11,6 +11,7 @@ def index():
 @application.route("/create-user", methods=['POST'])
 def create():
     email = request.json["email"]
-    db.session.add(User(email=email))
+    name = request.json["name"]
+    db.session.add(User(email=email, name=name))
     db.session.commit()
     return jsonify({ 'users': User.get_all_users() })
